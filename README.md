@@ -6,4 +6,5 @@ People do not need to depend on tripod or a someone else to take a photo of them
 
 # Note
 Change the directory of the icon photo and the ICO file, to run the program.
+
 Using the external camera will improve the quality of the photo.
