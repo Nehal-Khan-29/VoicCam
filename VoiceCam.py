@@ -76,27 +76,6 @@ def speak(text):
 
 
 # Commands
-'''
-def run():
-    cap = cv2.VideoCapture(0) 
-    start_time = time.time()
-    while (time.time() - start_time) < 5:
-        ret, frame = cap.read()
-        frame = cv2.flip(frame, 1)
-        cv2.waitKey(1)
-        cv2.imshow("VoiceCam", frame)
-    cap.release()
-    cv2.destroyAllWindows()
-
-def runflip():
-    cap = cv2.VideoCapture(0) 
-    start_time = time.time()
-    while (time.time() - start_time) < 5:
-        ret, frame = cap.read()
-        cv2.waitKey(1)
-        cv2.imshow("VoiceCam", frame)
-    cap.release()
-    cv2.destroyAllWindows()'''
     
 def close_program():
     cap.release()
