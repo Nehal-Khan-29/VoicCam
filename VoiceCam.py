@@ -15,11 +15,11 @@ from PIL import ImageTk,Image
 
 # Variables
 cap=cv2.VideoCapture(0)
-folder_path = "C:/Users/NEHAL KHAN/Videos/Captures/VoiceCam"
-photo_value_path="C:/Users/NEHAL KHAN/Videos/Captures/VoiceCam/Photo_value.txt"
+folder_path = "VoiceCam"
+photo_value_path="VoiceCam/Photo_value.txt"
 
 # Directory add
-directory = "C:/Users/NEHAL KHAN/Videos/Captures"
+directory = os.getcwd()
 folder_name = "VoiceCam"
 
 if not os.path.exists(os.path.join(directory, folder_name)):
@@ -120,8 +120,8 @@ def flip_camera():
 
 icon = tk.Tk()
 icon.title('VoiceCam')
-icon.iconbitmap("E:\\NK programs\\Python\\python save\\VoiceCam\\icon ico.ico")
-image = Image.open("E:\\NK programs\\Python\\python save\\VoiceCam\\icon.png")
+icon.iconbitmap("icon ico.ico")
+image = Image.open("icon.png")
 tk_image = ImageTk.PhotoImage(image)
 image_label = tk.Label(icon, image=tk_image)
 image_label.pack()
@@ -155,7 +155,7 @@ def ru():
     force_stop_button.pack()
 
 
-    image_path = "E:\\NK programs\\Python\\python save\\VoiceCam\\icon.png"
+    image_path = "icon.png"
     try:
         image = Image.open(image_path)
         tk_image = ImageTk.PhotoImage(image)
@@ -166,7 +166,7 @@ def ru():
 
 
     fstop.title('Force stop')
-    fstop.iconbitmap("E:\\NK programs\\Python\\python save\\VoiceCam\\icon ico.ico")
+    fstop.iconbitmap("icon ico.ico")
     screen_width = fstop.winfo_screenwidth()
     screen_height = fstop.winfo_screenheight()
     window_width = 300
